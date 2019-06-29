@@ -2,13 +2,6 @@
 metatype: css
 ---
 
-:root {
-  --background-color: #29323c;
-  --background-color-2: #23272a;
-  --heading-color: #03a9f4;
-  --text-color: #d3d3d3;
-}
-
 /* Blog body styling */
 html,
 body {
@@ -16,14 +9,14 @@ body {
 }
 
 body {
-  background: var(--background-color);
-  color: var(--text-color);
+  background: #282828;
+  color: #d3d3d3;
 }
 
 /* Blog post content styling */
 
 table tr:nth-child(2n) {
-  background: var(--background-color) !important;
+  background: #282828 !important;
 }
 
 p,
@@ -36,7 +29,7 @@ strong,
 .nn,
 ol,
 li {
-  color: var(--text-color) !important;
+  color: #d3d3d3 !important;
 }
 
 h1 a,
@@ -48,27 +41,27 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--heading-color) !important;
+  color: white !important;
 }
 
 .post-date {
-  color: var(--text-color);
+  color: #d3d3d3;
 }
 
 .post-content {
-  color: var(--background-color-2) !important;
+  color: #1f1f1f !important;
 }
 
 /* Button styling */
 
 .big-button {
   transition-duration: 0.25s;
-  background-color: var(--background-color-2) !important;
+  background-color: #1f1f1f !important;
 }
 
 .big-button:hover,
 .big-button:focus {
-  background-color: var(--heading-color) !important;
+  background-color: white !important;
 }
 
 /* Blog heading */
@@ -82,7 +75,7 @@ h4 {
 }
 
 #author-header .item:not(.first) {
-  border-left: 1px solid var(--background-color-2);
+  border-left: 1px solid #1f1f1f;
 }
 
 .header-image {
@@ -97,34 +90,34 @@ h4 {
 /* Form styling */
 
 input {
-  color: var(--text-color) !important;
+  color: #d3d3d3 !important;
 }
 
 .form-box {
-  border: 1px solid var(--background-color-2);
+  border: 1px solid #1f1f1f;
 }
 
 pre,
 .highlight,
 input {
-  background-color: var(--background-color-2) !important;
+  background-color: #1f1f1f !important;
   border-radius: 8px;
 }
 
 /* MD Code Syntax Highlighting */
 
 code {
-  background-color: var(--background-color-2) !important;
-  border: 1px solid var(--background-color-2) !important;
+  background-color: #1f1f1f !important;
+  border: 1px solid #1f1f1f !important;
   border-radius: 8px;
 }
 
 pre code {
-  color: var(--text-color);
+  color: #d3d3d3;
 }
 
 p code {
-  color: var(--text-color) !important;
+  color: #d3d3d3 !important;
 }
 
 /* 
@@ -132,11 +125,11 @@ Monokai Theme for Syntax
 source: https://raw.githubusercontent.com/jwarby/pygments-css/master/monokai.css 
 */
 .highlight pre {
-  background-color: var(--background-color-2);
+  background-color: #1f1f1f;
   border-radius: 8px;
 }
 .highlight .hll {
-  background-color: var(--background-color-2);
+  background-color: #1f1f1f;
 }
 .highlight .c {
   color: #75715e;

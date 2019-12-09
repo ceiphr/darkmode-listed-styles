@@ -4,8 +4,8 @@ Dark mode style for Standard Notes' listed blogging platform.
 
 ## Demo
 
-Check out [this post on changelog.ceiphr.com](https://changelog.ceiphr.com/akDt1eCSK3) 
-(https://changelog.ceiphr.com/akDt1eCSK3) to preview the theme with a test markdown page.
+Check out [this post on changelog.ceiphr.com](https://changelog.ceiphr.com/p/akDt1eCSK3) 
+(https://changelog.ceiphr.com/p/akDt1eCSK3) to preview the theme with a test markdown page.
 
 ## Installing on Your Listed Blog
 1. While logged into your account, create a new note in [Standard Notes](https://app.standardnotes.org/)

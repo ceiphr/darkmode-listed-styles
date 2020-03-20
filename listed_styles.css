@@ -2,6 +2,26 @@
 metatype: css
 ---
 
+:root {
+  --dimmed-text-color: #d3d3d3;
+  --dimmed-border-color: #282828;
+  --background-color: #282828;
+  --body-text-color: #d3d3d3;
+  --post-title-color: var(--body-text-color);
+  --post-date-color: var(--body-text-color);
+  --post-text-color: var(--body-text-color);
+  --page-menu-link-color: var(--body-text-color);
+  --header-author-name: var(--body-text-color);
+  --header-listed-name: var(--dimmed-text-color);
+  --more-from-border-color: var(--dimmed-border-color);
+  --bio-color: var(--body-text-color);
+  --wordcount-color: var(--dimmed-text-color);
+  --website-color: var(--dimmed-text-color);
+  --twitter-color: var(--dimmed-text-color);
+  --link-color: #086dd6;
+  --header-border-color: var(--dimmed-border-color);
+}
+
 /* Blog body styling */
 html,
 body {
@@ -11,6 +31,7 @@ body {
 body {
   background: #282828;
   color: #d3d3d3;
+  overflow-x: hidden;
 }
 
 /* Blog post content styling */
@@ -52,59 +73,11 @@ h4 {
   color: #1f1f1f !important;
 }
 
-/* Button styling */
-
-.big-button {
-  transition-duration: 0.25s;
-  background-color: #1f1f1f !important;
-}
-
-.big-button:hover,
-.big-button:focus {
-  background-color: white !important;
-}
-
-/* Blog heading */
-
-#header {
-  display: none;
-}
-
-#author-header .bio {
-  opacity: 1;
-}
-
-#author-header .item:not(.first) {
-  border-left: 1px solid #1f1f1f;
-}
-
-.header-image {
-  width: 100px !important;
-  border-radius: 100%;
-}
-
-.header-image-container {
-  margin-bottom: 10px !important;
-}
-
-/* Form styling */
-
-input {
-  color: #d3d3d3 !important;
-}
-
-.form-box {
-  border: 1px solid #1f1f1f;
-}
-
-pre,
-.highlight,
-input {
-  background-color: #1f1f1f !important;
-  border-radius: 8px;
-}
-
 /* MD Code Syntax Highlighting */
+
+.highlight {
+    background-color: transparent;
+}
 
 code {
   background-color: #1f1f1f !important;
@@ -306,9 +279,6 @@ source: https://raw.githubusercontent.com/jwarby/pygments-css/master/monokai.css
 .highlight .il {
   color: #ae81ff;
 } /* Literal.Number.Integer.Long */
-
-.highlight .gh {
-} /* Generic Heading & Diff Header */
 .highlight .gu {
   color: #75715e;
 } /* Generic.Subheading & Diff Unified/Comment? */

@@ -10,73 +10,126 @@ metatype: css
   --post-title-color: var(--body-text-color);
   --post-date-color: var(--body-text-color);
   --post-text-color: var(--body-text-color);
-  --page-menu-link-color: var(--body-text-color);
-  --header-author-name: var(--body-text-color);
-  --header-listed-name: var(--dimmed-text-color);
+  --page-menu-link-color: var(--link-color);
+  --header-author-name: #086dd6;
+  --header-listed-name: #086dd6;
   --more-from-border-color: var(--dimmed-border-color);
   --bio-color: var(--body-text-color);
-  --wordcount-color: var(--dimmed-text-color);
-  --website-color: var(--dimmed-text-color);
-  --twitter-color: var(--dimmed-text-color);
+  --wordcount-color: #086dd6;
+  --website-color: var(--link-color);
+  --twitter-color: var(--link-color);
   --link-color: #086dd6;
-  --header-border-color: var(--dimmed-border-color);
+  --header-border-color: #086dd6;
 }
 
-/* Blog body styling */
-html,
-body {
-  font-family: "Avenir Next", sans-serif;
+.radio-button__image-container img {
+  filter: invert(1);
 }
 
-body {
-  background: #282828;
-  color: #d3d3d3;
-  overflow-x: hidden;
+.dropdown__option .option__button {
+  color: var(--dimmed-text-color) !important;
 }
 
-/* Blog post content styling */
+.dropdown__list.card.dropdown__list--open {
+  box-shadow: 8px 8px 0 #086dd6;
+  background-color: #282828 !important;
+}
+
+.dropdown__option:hover {
+  background-color: rgba(8, 109, 214, 0.15);
+}
+
+#resources .resources__list li a,
+.payment-details .payment-details__credential,
+.text-field,
+.my-posts__item a.my-posts__post .post__details,
+.my-posts__item a.my-posts__post,
+.left-nav-bar .button:not(.button--active) {
+  color: var(--dimmed-text-color);
+}
+
+.dropdown__option .option__icon path,
+.section__collapse-icon path,
+.button.scroll-to-top__button
+  .scroll-to-top__container
+  .scroll-to-top__icon
+  path,
+.credential__icon path,
+.custom-domain__linked-icon path,
+.hover-content .hover-content__icon path,
+.my-posts__item a.my-posts__post .post__details .post-details__icon path,
+.left-nav-bar .button:not(.button--active) svg path {
+  fill: var(--dimmed-text-color);
+}
+
+.radio-button__icon-container svg path,
+.checkbox__icon-container svg path,
+.left-nav-bar .button--active .left-nav-bar__icon path,
+.button svg path {
+  fill: #086dd6;
+}
+
+.button--active::before {
+  background-color: rgba(8, 109, 214, 0.08);
+}
+
+.button--active {
+  color: #086dd6;
+}
+
+.button--disabled {
+  background-color: #3a3a3a;
+  color: #5e5e5e;
+  cursor: not-allowed;
+}
+
+.text-field {
+  border: 1px solid #1f1f1f;
+}
+
+#custom-domain .callout--success,
+#payment-details .callout--success {
+  background-color: #282828 !important;
+}
+
+#custom-domain .callout--success .hover-content__icon-container,
+#payment-details .callout--success .hover-content__icon-container {
+  background-color: #1f1f1f !important;
+}
+
+#author-posts .author-post,
+.text-field,
+.hover-content .hover-content__icon-container,
+#author-profile,
+.single-post-show,
+.page-header__container--post {
+  background-color: #282828;
+}
+
+.button.scroll-to-top__button,
+.button.scroll-to-top__button .scroll-to-top__container,
+#single-post-footer,
+.footer--blog-page,
+.callout,
+.card {
+  background-color: #1f1f1f;
+}
+
+/* MD Tables */
 
 table tr:nth-child(2n) {
-  background: #282828 !important;
+  background: #252525 !important;
 }
 
-p,
-form,
-.sublabel,
-hr::before,
-label,
-.post-body,
-strong,
-.nn,
-ol,
-li {
-  color: #d3d3d3 !important;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-a,
-h1,
-h2,
-h3,
-h4 {
-  color: white !important;
-}
-
-.post-date {
-  color: #d3d3d3;
-}
-
-.post-content {
-  color: #1f1f1f !important;
+.post-content .post-body table td,
+.post-content .post-body table th {
+  border: 1px solid #1f1f1f;
 }
 
 /* MD Code Syntax Highlighting */
 
 .highlight {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 code {
